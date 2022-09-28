@@ -11,6 +11,7 @@ adj := RandAdj()
  	Gui, NMS:add, text,, % "You are on the " . descworld . " planet with " . RandColor(tree) . " trees, " . RandColor(dino) . " dinosaurs, and " . RandColor(grass) . " grass, beware especially the " . dino . A_SPACE . RandDino()
 	Gui, NMS:add, button, gButtonRefresh Default, &Refresh
 	Gui, NMS:add, button, gButtonExit, E&xit
+	; add 256x256 stable diffusion generated images of these items, and 512x512 of main (all descriptors)
 	Gui, NMS:show
 return
 
